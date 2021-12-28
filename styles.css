@@ -60,6 +60,17 @@ ul a:hover{
     color: #ec7148;
 }
 
+p span{
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+p span:hover{
+    background-color: #ec7148;
+}
+
 .hamburger{
     display: none;
 }
