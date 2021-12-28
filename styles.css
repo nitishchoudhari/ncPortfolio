@@ -228,6 +228,12 @@ transition: background-color 0.2s ease-in-out;
     height: 50rem;
     box-shadow: 0.5rem 0.5rem 2rem rgb(197,195,195);
     margin: 1rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.project-card:hover{
+    background-color: rgb(197,195,195);
 }
 
 .project-container {
@@ -292,7 +298,7 @@ footer{
 
 .form-submit .submit{
     text-align: center;
-    padding-bottom: 0.7rem;
+    padding-bottom: 1.7rem;
 } 
 
 .form-row .form-control{
