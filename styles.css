@@ -12,7 +12,7 @@ section{
 
 footer{
     height:700px;
-    background-color: black;
+    background-color: #1c1d25;
     color: #fff;
     padding: 80px;
 }
@@ -349,3 +349,7 @@ form button:focus{
 color: goldenrod;
 }
 
+.thankyou{
+    color:red;
+    text-align: center;
+}
