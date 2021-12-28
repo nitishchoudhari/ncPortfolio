@@ -256,8 +256,9 @@ transition: background-color 0.2s ease-in-out;
 
 .project-image{
     width: 25rem;
+    height: 25rem;
     border-radius: 12.5rem;
-    border: 0.1rem solid rgb(197,195,195);
+    border: 0.13rem solid rgb(197,195,195);
     margin:1rem;
     margin-top: 2.5rem;
 }
