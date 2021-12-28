@@ -350,6 +350,24 @@ color: goldenrod;
 }
 
 .thankyou{
-    color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    background-color: #1c1d25;
+    height: 100vh;
+    font-size: 40px;
+    color:#fff;
 }
+
+
+.thankyou h2{
+    margin-top: 50px auto;
+}
+
+@media only screen and (max-width: 800px){
+    .thankyou h2{
+    font-size: 30px;
+    }
+}
+
