@@ -238,7 +238,7 @@ hr {
 
 .project-card {
   width: 30rem;
-  height: 50rem;
+  height: 55rem;
   box-shadow: 0.5rem 0.5rem 2rem rgb(197, 195, 195);
   margin: 1rem;
   transition: all 0.3s ease-in-out;
@@ -264,6 +264,24 @@ hr {
   font-size: 1.6rem;
   font-weight: 400;
   padding: 1rem;
+}
+.sub-text-p {
+  text-align: justify;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+.sub-text-p1 {
+  margin-bottom: 1.5rem;
+}
+.sub-text-p2 {
+  margin-bottom: 1.5rem;
+}
+.sub-text-p3 {
+  margin-bottom: 1.5rem;
+}
+
+.sub-text-p4 {
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 1040px) {
