@@ -237,7 +237,7 @@ hr {
 }
 
 .project-card {
-  width: 30rem;
+  flex-basis: 31rem;
   height: 55rem;
   box-shadow: 0.5rem 0.5rem 2rem rgb(197, 195, 195);
   margin: 1rem;
@@ -253,6 +253,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1.5rem;
 }
 
 .project-container h3 {
