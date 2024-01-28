@@ -478,3 +478,40 @@ form button:focus {
     font-size: 3rem;
   }
 }
+
+.glider-contain {
+  width: 90%;
+}
+
+/* Button styles */
+.glider-prev,
+.glider-next {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Dots styles */
+.glider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.glider-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffa500;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.glider-dot.active {
+  background-color: #ffa500;
+  width: 20px;
+}
