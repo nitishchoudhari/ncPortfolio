@@ -14,7 +14,7 @@ section {
 
 .hero {
   background-color: #1c1d25;
-  height: 60vh;
+  height: 100vh;
   font-size: 4rem;
   color: #fff;
 }
@@ -113,6 +113,9 @@ p span:hover {
 @media (max-width: 660px) {
   html {
     font-size: 30%;
+  }
+  .hero {
+    height: 65vh;
   }
 }
 
