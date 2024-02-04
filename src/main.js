@@ -6,16 +6,29 @@ hamBurger.addEventListener('click', () => {
 });
 
 window.addEventListener('load', function () {
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        draggable: true,
-        dots: '.dots',
-        arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-        }
-    });
+    if(window.innerWidth < 797){
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    } else {
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    }
 })
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -25,5 +38,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-  });
-
+});

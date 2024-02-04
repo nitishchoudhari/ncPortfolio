@@ -49,7 +49,7 @@ a {
 }
 
 ul a {
-  transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out
 }
 
 ul a:hover {
@@ -107,6 +107,9 @@ p span:hover {
   }
 }
 @media (max-width: 790px) {
+  .hero {
+    height: 65vh;
+  }
   html {
     font-size: 40%;
   }
@@ -116,7 +119,7 @@ p span:hover {
     font-size: 30%;
   }
   .hero {
-    height: 65vh;
+    height: 45vh;
   }
 }
 
@@ -191,6 +194,7 @@ hr {
 .button:hover {
   background-color: #ec7148;
 }
+
 .button:active {
   background-color: #a9a9a9;
   color: #808080;
@@ -207,6 +211,15 @@ hr {
 
 .fab:hover {
   color: coral;
+}
+
+.socials div {
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.socials div:hover {
+  transform: translate(-3px, -3px);
 }
 
 .logo {
@@ -520,4 +533,38 @@ form button:focus {
 .glider-dot.active {
   background-color: #ffa500;
   width: 20px;
+}
+
+.slide-from-top {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-from-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
