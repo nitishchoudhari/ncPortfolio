@@ -6,9 +6,21 @@ hamBurger.addEventListener('click', () => {
 });
 
 window.addEventListener('load', function () {
-    if(window.innerWidth < 797){
+     if(window.innerWidth < 797){
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+    });
+}
+    else if(window.innerWidth >= 797 && window.innerWidth <= 1024){
         new Glider(document.querySelector('.glider'), {
-            slidesToShow: 2,
+            slidesToShow: 2.5,
             slidesToScroll: 1,
             draggable: true,
             dots: '.dots',
@@ -29,6 +41,7 @@ window.addEventListener('load', function () {
             }
         });
     }
+
 })
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

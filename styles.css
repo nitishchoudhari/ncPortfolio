@@ -119,7 +119,7 @@ p span:hover {
     font-size: 30%;
   }
   .hero {
-    height: 65vh;
+    height: 55vh;
   }
 }
 
@@ -327,10 +327,11 @@ hr {
 /* contact-page */
 
 footer {
-  height: 70rem;
+  /* height: 70rem; */
   background-color: #1c1d25;
   color: #fff;
   padding: 8rem;
+  padding-bottom: 5px;
 }
 
 .form-submit-container {
@@ -414,13 +415,21 @@ form button:focus {
     width: 100%;
     margin-top: 0.5rem;
   }
-  footer {
+  .sub-text {
+    font-size: 2rem;
+    font-weight: 400;
+    /* padding: 1rem; */
+  }
+  .project-container h3 {
+    font-size: 2.5rem;
+  }
+  /* footer {
     height: 75rem;
     padding-left: 20rem;
-  }
-  .copyright {
+  } */
+  /* .copyright {
     width: 80%;
-  }
+  } */
 }
 
 .copyright {
@@ -432,9 +441,6 @@ form button:focus {
 }
 
 @media (max-width: 480px) {
-  footer {
-    background-color: #1c1d25;
-  }
   .form-submit h2 {
     font-size: 3.5rem;
   }
