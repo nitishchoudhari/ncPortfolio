@@ -119,7 +119,7 @@ p span:hover {
     font-size: 30%;
   }
   .hero {
-    height: 55vh;
+    height: 52.5vh;
   }
 }
 
@@ -416,12 +416,12 @@ form button:focus {
     margin-top: 0.5rem;
   }
   .sub-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     /* padding: 1rem; */
   }
   .project-container h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   /* footer {
     height: 75rem;
@@ -541,18 +541,41 @@ form button:focus {
   width: 20px;
 }
 
-.slide-from-top {
+.stack-slide{
   opacity: 0;
   transform: translateY(-50px);
-  animation: slideIn 0.5s ease forwards;
+  animation: stackSlide 1s ease forwards;
 }
 
-@keyframes slideIn {
+@keyframes stackSlide {
   from {
+    /* color: #fff; */
+    /* background-color: #000; */
     opacity: 0;
     transform: translateY(-50px);
   }
   to {
+    /* color: #000; */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.slide-from-top {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    color: #000;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    color: #fff;
     opacity: 1;
     transform: translateY(0);
   }
@@ -561,7 +584,7 @@ form button:focus {
 .slide-from-left {
   opacity: 0;
   transform: translateX(-50px);
-  animation: slideInLeft 0.5s ease forwards;
+  animation: slideInLeft 2s ease forwards;
 }
 
 @keyframes slideInLeft {
