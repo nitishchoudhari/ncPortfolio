@@ -28,10 +28,14 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  width: 50rem;
+  width: 75rem;
   font-size: 3rem;
   padding-left: 0;
-  padding-top: 3.5rem;
+}
+
+ul.show{
+  padding: 2rem;
+  height: 78px;
 }
 
 .hero-area {
@@ -68,11 +72,7 @@ p span:hover {
   background-color: #ec7148;
 }
 
-.hamburger {
-  display: none;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .hamburger {
     display: block;
     color: #fff;
@@ -84,64 +84,46 @@ p span:hover {
   }
 
   ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
     background-color: #2b2c38;
     margin: 0;
-    padding: 2rem;
+    transition: 0.5s ease-in;
   }
 
   nav {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-color: #2b2c38;
   }
-
-  .logo {
-    display: none;
-  }
 }
 
-@media (max-width: 1000px) {
-  html {
-    font-size: 50%;
-  }
-}
-@media (max-width: 790px) {
-  .hero {
-    height: 65vh;
-  }
-  html {
-    font-size: 40%;
-  }
-}
-@media (max-width: 660px) {
-  html {
-    font-size: 30%;
-  }
-  .hero {
-    height: 52.5vh;
-  }
+.hamburger {
+  display: none;
 }
 
-@media (max-width: 484px) {
-  html {
-    font-size: 22%;
-  }
-}
-
-@media (max-width: 360px) {
-  html {
-    font-size: 19%;
-  }
-}
-@media (max-width: 320px) {
-  html {
-    font-size: 16%;
-  }
-}
-
-ul.show {
+.bars{
   display: block;
+  width: 24px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.hamburger.active .bars:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bars:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bars:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 h1 {
@@ -309,6 +291,10 @@ hr {
     display: flex;
     flex-wrap: wrap;
   }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 .project-image {
@@ -404,9 +390,6 @@ form button:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  .form-submit {
-    width: 80%;
-  }
   .form-submit .form-row {
     display: flex;
     flex-direction: column;
@@ -423,13 +406,6 @@ form button:focus {
   .project-container h3 {
     font-size: 3rem;
   }
-  /* footer {
-    height: 75rem;
-    padding-left: 20rem;
-  } */
-  /* .copyright {
-    width: 80%;
-  } */
 }
 
 .copyright {
@@ -441,6 +417,10 @@ form button:focus {
 }
 
 @media (max-width: 480px) {
+  .bars {
+    width: 18px;
+    height: 3px;
+  }
   .form-submit h2 {
     font-size: 3.5rem;
   }
@@ -464,9 +444,6 @@ form button:focus {
 }
 
 @media (max-width: 350px) {
-  footer {
-    background-color: #1c1d25;
-  }
   .form-submit h2 {
     font-size: 2.5rem;
   }
@@ -597,3 +574,92 @@ form button:focus {
     transform: translateX(0);
   }
 }
+
+/* certification section */
+ #certification .info h2 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-certifications {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-certifications div img {
+  max-width: 100%;
+  width: 60rem;
+  height: 45rem; 
+}
+
+#certification {
+  background-color: rgb(197, 195, 195);
+} 
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 75vh;
+  }
+  html {
+    font-size: 50%;
+  }
+  .hamburger-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #hamburger {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 65vh;
+  }
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 660px) {
+  html {
+    font-size: 30%;
+  }
+  .hero {
+    height: 52.5vh;
+  }
+}
+
+@media (max-width: 484px) {
+  html {
+    font-size: 22%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 19%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 16%;
+  }
+} 
+
+.ceritication-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+
+.ceritication-img.open {
+  transform: scale(1.2); 
+}
+

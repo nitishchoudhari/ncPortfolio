@@ -33,15 +33,22 @@
 <body>
   <section class="hero">
     <nav>
-      <img class="logo" src="src/images/logo-1.png" alt="logo" />
-      <ul id="nav-list">
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-me">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <div class="hamburger-logo">
+        <img class="logo" src="src/images/logo-1.png" alt="logo" />
+        <div class="hamburger" id="hamburger">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <ul id="nav-list">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certification">Certifications</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="hero-area">
       <div class="hero-text">
@@ -171,6 +178,25 @@
       <img src="src/images/nitish-pic1.png" alt="nitish image" class="headshot" />
     </div>
   </section>
+
+  <section class="sub-section" id="certification">
+    <div class="info">
+      <h2>Certifications</h2>
+      <div class="info-certifications">
+        <div>
+          <a class="image-link">
+            <img class="ceritication-img" src="/src/images/certifications/freecodecamp.png" alt="freecodecamp">
+          </a>
+        </div>
+        <div>
+        <a class="image-link">
+          <img class="ceritication-img" src="/src/images/certifications/JavaScript Institute.png" alt="JS-Institute">
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
   <footer id="contact-me">
     <div class="form-submit-container">

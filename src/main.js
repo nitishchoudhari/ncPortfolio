@@ -3,6 +3,7 @@ const navList = document.getElementById('nav-list');
 
 hamBurger.addEventListener('click', () => {
     navList.classList.toggle('show');
+    hamBurger.classList.toggle('active')
 });
 
 window.addEventListener('load', function () {
@@ -59,3 +60,29 @@ window.addEventListener('scroll', function() {
         document.querySelector('#about-me .info p').classList.add('stack-slide');
     } 
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const imageLinks = document.querySelectorAll(".image-link");
+    
+    function openImage(event) {
+      event.preventDefault();
+      const image = this.querySelector("img");
+      image.classList.add("open");
+    }
+
+    function closeImages(event) {
+      const images = document.querySelectorAll(".image-link img");
+      images.forEach(img => {
+        if (img !== event.target) {
+          img.classList.remove("open");
+        }
+    });
+    }
+    
+    imageLinks.forEach(link => {
+      link.addEventListener("click", openImage);
+    });
+  
+    document.addEventListener("click", closeImages);
+  });
+  
