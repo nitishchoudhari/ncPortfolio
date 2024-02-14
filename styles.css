@@ -31,6 +31,7 @@ ul {
   width: 75rem;
   font-size: 3rem;
   padding-left: 0;
+  padding-top: 3.5rem;
 }
 
 ul.show{
@@ -91,6 +92,7 @@ p span:hover {
     background-color: #2b2c38;
     margin: 0;
     transition: 0.5s ease-in;
+    padding-top: 0;
   }
 
   nav {
