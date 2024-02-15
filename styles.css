@@ -631,6 +631,14 @@ form button:focus {
   .hero {
     height: 52.5vh;
   }
+  .info-certifications div img {
+    max-width: 100%;
+    width: 78rem;
+    height: 55rem; 
+  }
+  .hamburger{
+    margin-right: 3rem;
+  }
 }
 
 @media (max-width: 484px) {
@@ -650,14 +658,14 @@ form button:focus {
   }
 } 
 
-.ceritication-img {
+.certification-img {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease; 
   cursor: pointer;
 }
 
-.ceritication-img.open {
+.certification-img.open {
   transform: scale(1.2); 
 }
 
